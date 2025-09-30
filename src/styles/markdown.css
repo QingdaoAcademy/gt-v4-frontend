@@ -1,0 +1,18 @@
+.md-editor-previewOnly .md-editor-preview-wrapper {
+  padding: 0;
+}
+.md-editor-previewOnly .md-editor-preview-wrapper .md-editor-preview {
+  background-color: var(--color-bg-1);
+}
+.md-editor-preview.default-theme {
+  color: var(--color-text-1);
+}
+.md-editor-preview h1,
+.md-editor-preview h2,
+.md-editor-preview h3,
+.md-editor-preview h4,
+.md-editor-preview h5,
+.md-editor-preview h6 {
+  margin: 1em 0 0.8em 0;
+  color: var(--color-text-1);
+}

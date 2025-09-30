@@ -1,0 +1,55 @@
+.arco-avatar {
+  user-select: none;
+}
+
+.arco-modal {
+  min-width: min(400px, 90vw);
+  max-width: 90vw;
+  /* width: 90vw !important; */
+  /* max-width: 700px !important; */
+}
+
+.arco-radio-group {
+  line-height: 2em;
+}
+
+.arco-tabs-mobile .arco-tabs-nav-tab {
+  justify-content: center !important;
+}
+
+.arco-textarea-wrapper {
+  user-select: none;
+}
+
+.arco-form-item-no-label .arco-form-item-label-col {
+  display: none;
+}
+
+.arco-comment-avatar {
+  cursor: default !important;
+}
+
+.arco-comment {
+  margin-top: 0.5em !important;
+}
+
+.arco-comment-inner-comment {
+  margin-top: 1em !important;
+}
+
+.arco-popconfirm-popup-content {
+  max-width: min(500px, 80vw);
+  margin: 0 auto;
+}
+
+.arco-image-preview {
+  z-index: 1300 !important;
+}
+
+.arco-select-option-content .arco-space {
+  flex-wrap: wrap;
+}
+
+.arco-input-number-mode-button .arco-input {
+  text-align: center;
+}

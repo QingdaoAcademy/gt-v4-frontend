@@ -1,0 +1,54 @@
+body {
+  background-color: var(--color-bg-1);
+  color: var(--color-text-1);
+  --global-header-height: calc(58px);
+  --verify-color: rgb(var(--arcoblue-6));
+
+  --textarea-bg: var(--color-fill-1);
+  --trigger-bg: var(--color-neutral-1);
+}
+
+body[arco-theme='dark'] {
+  --textarea-bg: var(--color-bg-2);
+  --trigger-bg: var(--color-neutral-3);
+}
+
+#nprogress {
+  position: fixed;
+  z-index: 9999;
+}
+
+.mb-1 {
+  margin-bottom: 1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card-container {
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .arco-card {
+    width: 75vw;
+    max-width: 600px;
+    padding: 20px;
+    h2.arco-typography {
+      margin-top: 10px;
+    }
+  }
+}
+
+.shadow-5 {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.08);
+}
+
+.divider-30 {
+  margin: 30px 0 !important;
+}
+
+.no-select {
+  user-select: none;
+}

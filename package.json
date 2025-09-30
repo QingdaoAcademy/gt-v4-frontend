@@ -1,0 +1,46 @@
+{
+  "name": "gt-v4",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vue-tsc -b && vite build",
+    "fbuild": "vite build",
+    "preview": "vite preview",
+    "generate-pwa-assets": "pwa-assets-generator --preset minimal-2023 public/logo.svg"
+  },
+  "dependencies": {
+    "crypto-js": "^4.2.0",
+    "html2canvas": "^1.4.1",
+    "node-rsa": "^1.1.1",
+    "vue": "^3.4.37",
+    "zero-width-lib": "^1.1.0"
+  },
+  "devDependencies": {
+    "@arco-design/web-vue": "^2.56.1",
+    "@arco-plugins/vite-vue": "^1.4.5",
+    "@aws-sdk/client-s3": "^3.654.0",
+    "@aws-sdk/lib-storage": "^3.654.0",
+    "@types/nprogress": "^0.2.3",
+    "@vicons/tabler": "^0.12.0",
+    "@vite-pwa/assets-generator": "^0.2.6",
+    "@vitejs/plugin-vue": "^5.1.2",
+    "axios": "^1.7.7",
+    "luxon": "^3.5.0",
+    "md-editor-v3": "^4.20.0",
+    "mermaid": "^11.2.1",
+    "nprogress": "^0.2.0",
+    "pinia": "^2.2.2",
+    "pinia-plugin-persistedstate": "^4.0.0",
+    "sass": "^1.78.0",
+    "spark-md5": "^3.0.2",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.1",
+    "vite-plugin-pwa": "^0.20.5",
+    "vue-qr": "^4.0.9",
+    "vue-router": "^4.4.3",
+    "vue-tsc": "^2.0.29",
+    "xss": "^1.0.15"
+  }
+}
