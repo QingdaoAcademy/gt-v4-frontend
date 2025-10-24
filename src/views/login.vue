@@ -94,6 +94,7 @@ const resetPassword = () => {
           :rules="[{ required: true, message: '请输入账号' }]"
           :validate-trigger="['change', 'input']"
           asterisk-position="end"
+          tooltip="你在注册时设置的瓜田账号"
         >
           <a-input v-model="form.username" placeholder="请输入账号" />
         </a-form-item>
@@ -103,6 +104,7 @@ const resetPassword = () => {
           :rules="[{ required: true, message: '请输入密码' }]"
           :validate-trigger="['change', 'input']"
           asterisk-position="end"
+          tooltip="通过云校注册的初始密码为爱云校密码"
         >
           <a-input-password v-model="form.password" placeholder="请输入密码" />
         </a-form-item>

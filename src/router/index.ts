@@ -65,6 +65,15 @@ const routes = [
     },
   },
   {
+    path: '/register-yunxiao/',
+    name: 'register-yunxiao',
+    component: () => import('../views/register-yunxiao.vue'),
+    meta: {
+      title: '注册',
+      requireUnLogin: true,
+    },
+  },
+  {
     path: '/login/',
     name: 'login',
     component: () => import('../views/login.vue'),

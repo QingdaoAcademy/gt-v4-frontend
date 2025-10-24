@@ -17,7 +17,12 @@ const showQRCode = ref(false);
         </a-typography-text>
       </div>
 
-      <a-collapse :default-active-key="['1']">
+      <a-collapse :default-active-key="['0', '1']">
+        <a-collapse-item header="爱云校验证" key="0">
+          如果你仍是在校学生，可以<RouterLink :to="{ name: 'register-yunxiao' }"
+            ><a-link>点击这里使用爱云校账号注册</a-link></RouterLink
+          >。我们将会收集你的爱云校账号和密码以验证你的身份，密码明文会在验证后立即删除。通过此方式注册的用户初始密码与爱云校密码相同。
+        </a-collapse-item>
         <a-collapse-item header="企业微信验证（推荐）" key="1">
           请你使用<b>本人的青岛中学或青岛金家岭学校企业微信</b>扫描<a-link
             @click="showQRCode = true"
