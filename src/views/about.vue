@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { ref } from 'vue';
-import oldUsers from '../consts/oldUsers.json';
+// import { ref } from 'vue';
+// import oldUsers from '../consts/oldUsers.json';
 import { isMobile } from '../consts/isMobile';
 
 const timelineData = [
@@ -95,8 +95,8 @@ const oldUsersBrief = [
   '暖冬',
 ];
 
-const oldUserVisible = ref(false),
-  oldUserScrollbar = ref(true);
+// const oldUserVisible = ref(false),
+//   oldUserScrollbar = ref(true);
 </script>
 
 <template>
@@ -172,10 +172,9 @@ const oldUserVisible = ref(false),
         </a-tag>
       </a-space>
       <a-typography-paragraph style="font-size: 1.2em">
-        <a-link @click="oldUserVisible = true" style="font-size: 0.95em">
-          点击此处
-        </a-link>
-        查看完整旧用户名单
+        <a-link href="https://v3.qaguatian.com/" style="font-size: 0.95em"
+          >点击此处</a-link
+        >查看旧版瓜田的帖子和用户存档。
       </a-typography-paragraph>
     </div>
 
@@ -196,7 +195,7 @@ const oldUserVisible = ref(false),
     </a-typography-paragraph>
   </a-layout>
 
-  <a-modal v-model:visible="oldUserVisible" title="用户名单" hide-cancel>
+  <!-- <a-modal v-model:visible="oldUserVisible" title="用户名单" hide-cancel>
     <a-typography-paragraph style="font-size: 1.1em">
       以下是瓜田V1.0-3.0的所有用户名单，我们对所有用户的支持表示诚挚的感谢！
     </a-typography-paragraph>
@@ -213,7 +212,7 @@ const oldUserVisible = ref(false),
         </a-list-item>
       </template>
     </a-list>
-  </a-modal>
+  </a-modal> -->
 </template>
 
 <style lang="scss" scoped>
