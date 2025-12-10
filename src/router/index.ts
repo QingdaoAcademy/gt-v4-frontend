@@ -6,6 +6,14 @@ import { Message } from '@arco-design/web-vue';
 
 const routes = [
   {
+    path: '/2026/',
+    name: '2026',
+    component: () => import('../views/2026.vue'),
+    meta: {
+      title: '2026 狂欢节',
+    },
+  },
+  {
     path: '/',
     name: 'index',
     component: () => import('../views/index.vue'),
